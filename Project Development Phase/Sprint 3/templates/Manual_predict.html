@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+
+    <form id="survey-form" action="{{ url_for('y_predict')}}" method="post">
+        <h1 id="title">Engine Failure Prediction</h1>
+        <fieldset id="content">
+            <legend>Please fill in your details to know whether the engine fails within 30 days</legend>
+            <h1>{{prediction_text}}</h1>
+            <div class="form-element">
+                <label >Enter your id:</label>
+                <input class="form-con"
+                       id="id"
+                       name="id"
+                       type="number"
+                       placeholder="Enter your id"
+                       required
+                />
+            </div>
+            <div class="form-element">
+                <label >Enter your cycle:</label>
+                <input class="form-con"
+                       id="cycle"
+                       name="cycle"
+                       type="number"
+                       placeholder="Enter your cycle"
+                       required
+                />
+            </div>
+            <div class="form-element">
+                <label >Enter your setting 1:</label>
+                <input class="form-con"
+                       id="setting_1"
+                       name="setting_1"
+                       type="number"
+                       placeholder="Enter your setting 1"
+                       required
+                />
+            </div>
+            <div class="form-element">
+                <label >Enter your setting 2:</label>
+                <input class="form-con"
+                       id="setting_2"
+                       name="setting_2"
+                       type="number"
+                       placeholder="Enter your setting 2"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your setting 3:</label>
+                <input class="form-con"
+                       id="setting_3"
+                       name="setting_3"
+                       type="number"
+                       placeholder="Enter your setting 3"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s1:</label>
+                <input class="form-con"
+                       id="s1"
+                       name="s1"
+                       type="number"
+                       placeholder="Enter your s1"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s2:</label>
+                <input class="form-con"
+                       id="s2"
+                       name="s2"
+                       type="number"
+                       placeholder="Enter your s2"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s3:</label>
+                <input class="form-con"
+                       id="s3"
+                       name="s3"
+                       type="number"
+                       placeholder="Enter your s3"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s4:</label>
+                <input class="form-con"
+                       id="s4"
+                       name="s4"
+                       type="number"
+                       placeholder="Enter your s4"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s5:</label>
+                <input class="form-con"
+                       id="s5"
+                       name="s5"
+                       type="number"
+                       placeholder="Enter your s5"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s6:</label>
+                <input class="form-con"
+                       id="s6"
+                       name="s6"
+                       type="number"
+                       placeholder="Enter your s6"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s7:</label>
+                <input class="form-con"
+                       id="s7"
+                       name="s7"
+                       type="number"
+                       placeholder="Enter your s7"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s8:</label>
+                <input class="form-con"
+                       id="s8"
+                       name="s8"
+                       type="number"
+                       placeholder="Enter your s8"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s9:</label>
+                <input class="form-con"
+                       id="s9"
+                       name="s9"
+                       type="number"
+                       placeholder="Enter your s9"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s10:</label>
+                <input class="form-con"
+                       id="s10"
+                       name="s10"
+                       type="number"
+                       placeholder="Enter your s10"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s11:</label>
+                <input class="form-con"
+                       id="s11"
+                       name="s11"
+                       type="number"
+                       placeholder="Enter your s11"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s12:</label>
+                <input class="form-con"
+                       id="s12"
+                       name="s12"
+                       type="number"
+                       placeholder="Enter your s12"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s13:</label>
+                <input class="form-con"
+                       id="s13"
+                       name="s13"
+                       type="number"
+                       placeholder="Enter your s13"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s14:</label>
+                <input class="form-con"
+                       id="s14"
+                       name="s14"
+                       type="number"
+                       placeholder="Enter your s14"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s15:</label>
+                <input class="form-con"
+                       id="s15"
+                       name="s15"
+                       type="number"
+                       placeholder="Enter your s15"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s16:</label>
+                <input class="form-con"
+                       id="s16"
+                       name="s16"
+                       type="number"
+                       placeholder="Enter your s16"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s17:</label>
+                <input class="form-con"
+                       id="s17"
+                       name="s17"
+                       type="number"
+                       placeholder="Enter your s17"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s18:</label>
+                <input class="form-con"
+                       id="s18"
+                       name="s18"
+                       type="number"
+                       placeholder="Enter your s18"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s19:</label>
+                <input class="form-con"
+                       id="s19"
+                       name="s19"
+                       type="number"
+                       placeholder="Enter your s19"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s20:</label>
+                <input class="form-con"
+                       id="s20"
+                       name="s20"
+                       type="number"
+                       placeholder="Enter your s20"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s21:</label>
+                <input class="form-con"
+                       id="s21"
+                       name="s21"
+                       type="number"
+                       placeholder="Enter your s21"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your ttf:</label>
+                <input class="form-con"
+                       id="ttf"
+                       name="ttf"
+                       type="number"
+                       placeholder="Enter your ttf"
+                       required
+                />
+            </div>
+        </fieldset>
+        <button type="submit" id="submit"><a href="y_predict">Check</a></button>
+    </form>
+
+    </body>
+</html>
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,300&family=Rubik:wght@300&display=swap');
+*,*::before,*::after{
+font-family: 'Rubik', sans-serif;
+color:white;
+box-sizing:border-box;
+}
+body{
+    margin-top:6vh;
+    background:url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_1139630453_407745.jpg),
+    linear-gradient(120deg, #ff0000, #150a8ae7);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-blend-mode:overlay;
+    background-position:center;
+}
+h1 {
+  font-weight: 600;
+  line-height: 2.6;
+}
+p {
+  font-size: 1.65rem;
+}
+h1,p {
+  text-align:center;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+a{
+    text-decoration:none;
+}
+label{
+  line-height:2.5rem;
+  font-size:25px;
+}
+input{
+  color:black;
+  font-weight:600;
+}
+input[type="checkbox"]{
+  min-height:1.1rem;
+  min-width:1.1rem;
+}
+input[type="radio"]{
+  min-height:1.3rem;
+  min-width:1.3rem;
+}
+select,option{
+  color:black;
+  font-weight:600;
+  text-align:start;
+  width:100%;
+  height:35px;
+  border-radius:5px;
+}
+option{
+  font-size:1.013rem;
+}
+textarea{
+  min-width:100%;
+  min-height:150px;
+  color:black;
+  font-weight:600;
+  border-radius:5px;
+}
+textarea::placeholder{
+  padding-left:10px;
+  font-size:1.031rem;
+}
+textarea:focus{
+ outline:3px solid rgb(0, 15, 255,0.6);
+}
+select:focus{
+  outline:3px solid rgb(0, 15, 255,0.6);
+}
+select{
+    font-size:1.013rem;
+    color:grey;
+    padding-left:13px;
+}
+#survey-form{
+  background:rgb(0,0,0,0.7);
+  min-height:180vh;
+  margin:10vh auto;
+  max-width:750px;
+  border-radius:10px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+}
+#content{
+  width:90%;
+  min-height:140vh;
+  margin:1.13rem auto;
+  display:grid;
+  grid-template-columns:100%;
+  grid-gap:1.5rem;
+  justify-items:center;
+  border-radius:10px;
+}
+.form-element{
+  width:90%;
+  display:block;
+}
+.form-con{
+  width:100%;
+  height:35px;
+  border:none;
+  border-radius:5px;
+}
+.form-con::placeholder{
+    font-size:1.013rem;
+    padding-left:15px;
+    font-weight:600;
+  }
+.form-con:focus{
+  outline:3px solid rgb(0, 15, 255,0.6);
+}
+.long{
+  line-height:1.6rem;
+}
+.check{
+  min-height:1.013rem;
+  min-width:1.013rem;
+}
+#submit{
+  background: linear-gradient(-60deg, #ff0000, #da2727ba, #2658ccba, #150a8ae7);
+  width:90%;
+  border-radius:5px;
+  min-height:2.031rem;
+  border:none;
+  font-weight:600;
+  letter-spacing:0.1rem;
+  cursor:pointer;
+  margin-bottom:6vh;
+  font-size:1.031rem;
+  background-size: 250% 250%;
+  animation:hover-effect 5s ease infinite;
+}
+#submit:hover{
+  outline:3px solid rgb(0, 15, 255,0.6);
+}
+#submit:focus{
+  animation:hover-effect 5s ease infinite;
+  outline:3px solid rgb(0, 15, 255,0.6);
+}
+textarea,select{
+    margin-top:1vh;
+ }
+@keyframes hover-effect{
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@media(max-width:900px){
+  #content,#survey-form{
+    max-width:650px;
+  }
+  #content{
+    margin:auto;
+    max-width:500px;
+  }
+  #submit{
+    max-width:500px;
+    margin:7vh 0;
+  }
+}
+@media(max-width:500px){
+  .long{
+    line-height:2.0rem;
+  }
+  h1{
+    font-size:1.7rem;
+  }
+  p{
+    font-size:1.3rem;
+  }
+  textarea,select{
+    margin-top:8px;
+  }
+  *{
+    font-size:1.031rem;
+    margin:auto 0;
+  }
+}
+</style>
